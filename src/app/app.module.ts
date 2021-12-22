@@ -3,16 +3,21 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { UserComponent } from './user/user.component';
+import { TransformDirective } from './transform.directive';
+import { SafePipe } from './pipes/safe/safe.pipe';
+import { CoreModule } from './core/core.module';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+  declarations: [AppComponent,
+    UserComponent,
+    TransformDirective,
+    SafePipe
+     ],
+
+  imports: [BrowserModule, AppRoutingModule, CoreModule],
+
+providers: [],
+  bootstrap: [AppComponent, UserComponent ]
 })
 export class AppModule { }
