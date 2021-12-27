@@ -8,6 +8,7 @@ import { CoreDirectiveDirective } from './core-directive.directive';
 @NgModule({
   declarations: [HeaderComponent, CorePipePipe, CoreDirectiveDirective],
   imports: [CommonModule],
+  
   exports:[HeaderComponent, CorePipePipe, CoreDirectiveDirective],
 })
 export class CoreModule { }
