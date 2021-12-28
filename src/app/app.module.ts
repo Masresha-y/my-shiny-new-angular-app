@@ -10,6 +10,7 @@ import { SafePipe } from './pipes/safe/safe.pipe';
 import { CoreModule } from './core/core.module';
 import { ChatComponent } from './components/chat/chat.component';
 import { UsersComponent } from './components/users/users.component';
+import { StringInterpolationComponent } from './components/bindings/string-interpolation/string-interpolation.component';
 
 @NgModule({
   declarations: [AppComponent,
@@ -17,7 +18,8 @@ import { UsersComponent } from './components/users/users.component';
     TransformDirective,
     SafePipe,
     ChatComponent,
-    UsersComponent
+    UsersComponent,
+    StringInterpolationComponent
      ],
  
   imports: [BrowserModule, AppRoutingModule, CoreModule, BrowserAnimationsModule],
