@@ -12,6 +12,7 @@ import { ChatComponent } from './components/chat/chat.component';
 import { UsersComponent } from './components/users/users.component';
 import { StringInterpolationComponent } from './components/bindings/string-interpolation/string-interpolation.component';
 import { PropertyBindingComponent } from './components/bindings/property-binding/property-binding.component';
+import { EventBindingComponent } from './components/bindings/event-binding/event-binding.component';
 
 @NgModule({
   declarations: [AppComponent,
@@ -21,7 +22,8 @@ import { PropertyBindingComponent } from './components/bindings/property-binding
     ChatComponent,
     UsersComponent,
     StringInterpolationComponent,
-    PropertyBindingComponent
+    PropertyBindingComponent,
+    EventBindingComponent
      ],
  
   imports: [BrowserModule, AppRoutingModule, CoreModule, BrowserAnimationsModule],
